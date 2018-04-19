@@ -1,0 +1,10 @@
+# GOPATH
+export GOROOT=/usr/local/go/
+export GOPATH=$HOME/go/
+export GOBIN=/usr/local/go/bin
+
+# GNUPATH
+GNUPATH=/usr/local/opt/coreutils/libexec/gnubin
+
+# export
+export PATH=$GNUPATH:$GOBIN:$PATH
