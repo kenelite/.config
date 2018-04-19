@@ -32,3 +32,13 @@ cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive
 ./install.sh  --clang-completer --go-completer --js-completer  --system-libclang
 
 ```
+
+
+# zsh
+
+##oh-my-zsh
+
+```
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+```

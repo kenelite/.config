@@ -59,7 +59,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
+plugins=( autojump )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,3 +103,6 @@ fi
 if [ -f ~/.bash_path ]; then
 	    . ~/.bash_path
 fi
+# autojump
+#[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
