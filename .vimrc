@@ -41,10 +41,12 @@ set laststatus=2
 
 """NerdTree"""
 map <F6> :NERDTreeToggle<CR>
+let NERDTreeWinSize=25
+"autocmd vimenter * NERDTree
 
 """tagbar"""
 nmap <F7> :TagbarToggle<CR>
-let g:tagbar_width=26
+let g:tagbar_width=25
 let g:tagbar_autofocus = 1
 autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go call tagbar#autoopen()
 
