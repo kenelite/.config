@@ -39,10 +39,10 @@ set laststatus=2
 
 
 """NerdTree"""
-map <C-n> :NERDTreeToggle<CR>
+map <F6> :NERDTreeToggle<CR>
 
 """tagbar"""
-nmap <C-m> :TagbarToggle<CR>
+nmap <F7> :TagbarToggle<CR>
 let g:tagbar_width=26
 let g:tagbar_autofocus = 1
 autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go call tagbar#autoopen()
