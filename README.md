@@ -1,3 +1,4 @@
+# dotfiles #
 # .vimrc #
 
 
@@ -5,7 +6,7 @@
 ## download .vimrc
 
 ```
-wget https://github.com/kenelite/vimrc/raw/master/.vimrc -O ~/.vimrc 
+wget https://github.com/kenelite/dotfiles/raw/master/.vimrc -O ~/.vimrc 
 ```
 
 ## install Vundle
