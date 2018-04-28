@@ -5,6 +5,7 @@ alias ll="ls -lh"
 alias vim="mvim -v"
 
 ###git###
+alias grso='git remote show origin'
 alias gpo='git push origin master'
 alias gp='git pull'
 alias gs='git status'
