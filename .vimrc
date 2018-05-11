@@ -31,7 +31,7 @@ set ruler
 set incsearch
 set enc=utf-8
 set winaltkeys=no
-set mouse=n
+set mouse=a
 set ttymouse=xterm2
 
 
