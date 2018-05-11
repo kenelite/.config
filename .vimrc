@@ -31,7 +31,8 @@ set ruler
 set incsearch
 set enc=utf-8
 set winaltkeys=no
-set mouse=a
+set mouse=n
+set ttymouse=xterm2
 
 
 """status line"""
