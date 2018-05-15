@@ -94,6 +94,9 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tomasr/molokai'
 Bundle 'klen/python-mode'
 
+Bundle 'jstemmer/gotags'
+Bundle 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 
