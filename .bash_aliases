@@ -16,3 +16,7 @@ alias glf='git ls-files'
 ###macOS###
 alias subl='/Applications/SublimeText.app/Contents/SharedSupport/bin/subl'
 alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+
+
+###wheather###
+alias weather='curl wttr.in'
