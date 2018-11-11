@@ -43,3 +43,20 @@ cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 ```
+
+
+# Brew
+
+#backup
+
+```
+
+brew bundle dump --force --describe --file=~/.brewfile
+
+```
+#restore
+```
+
+brew bundle install -v --file=~/.brewfile
+
+```
