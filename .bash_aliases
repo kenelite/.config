@@ -1,5 +1,6 @@
 ###ls###
-alias ll="ls -lh"
+alias ll="ls -lh --color"
+alias ls="ls --color"
 
 ###mvim###
 alias vim="mvim -v"
