@@ -1,14 +1,23 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
 # Informative, fancy bash prompt for Git users
 brew "bash-git-prompt"
-# FSF/GNU ld, ar, readelf, etc. for native development
-brew "binutils"
+# GNU binary tools for native development
+brew "binutils", link: true
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# Searches a binary image for embedded files and executable code
+brew "binwalk"
 # CloudFlare's PKI toolkit
 brew "cfssl"
 # Statistics utility to count lines of code
@@ -24,7 +33,7 @@ brew "ctags"
 # Go dependency management tool
 brew "dep"
 # Classic UNIX line editor
-brew "ed", args: ["with-default-names"]
+brew "ed"
 # Collection of GNU find, xargs, and locate
 brew "findutils", args: ["with-default-names"]
 # User-friendly command-line shell for UNIX-like operating systems
@@ -38,7 +47,7 @@ brew "gnu-indent", args: ["with-default-names"]
 # GNU implementation of the famous stream editor
 brew "gnu-sed", args: ["with-default-names"]
 # GNU version of the tar archiving utility
-brew "gnu-tar", args: ["with-default-names"]
+brew "gnu-tar"
 # GNU implementation of which utility
 brew "gnu-which", args: ["with-default-names"]
 # GNU Transport Layer Security (TLS) Library
@@ -61,18 +70,16 @@ brew "kubernetes-helm"
 brew "lrzsz"
 # Powerful, lightweight programming language
 brew "lua"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # GUI for vim, made for macOS
 brew "macvim"
+# Java-based project management
+brew "maven"
 # Open source relational database management system
-brew "mysql", link: false
+brew "mysql", restart_service: true
 # Open source relational database management system
 brew "mysql-client"
 # MySQL database connector for C applications
-brew "mysql-connector-c"
+brew "mysql-connector-c", link: false
 # Platform built on V8 to build network applications
 brew "node"
 # Swiss-army knife of markup format conversion
@@ -81,8 +88,12 @@ brew "pandoc"
 brew "pv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@2"
+# x86 and PowerPC Emulator
+brew "qemu"
 # Persistent key-value database, with built-in net interface
-brew "redis"
+brew "redis", restart_service: true
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
 # User interface to the TELNET protocol (built from macOS Sierra sources)
@@ -102,6 +113,7 @@ brew "youtube-dl"
 cask "diffmerge"
 cask "docker"
 cask "iina"
+cask "java"
 cask "keka"
 cask "macdown"
 cask "meld"
