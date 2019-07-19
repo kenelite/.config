@@ -40,10 +40,12 @@ brew "findutils", args: ["with-default-names"]
 brew "fish"
 # GNU awk utility
 brew "gawk"
+# Distributed revision control system
+brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
 # C code prettifier
-brew "gnu-indent", args: ["with-default-names"]
+brew "gnu-indent"
 # GNU implementation of the famous stream editor
 brew "gnu-sed", args: ["with-default-names"]
 # GNU version of the tar archiving utility
@@ -79,7 +81,7 @@ brew "mysql", restart_service: true
 # Open source relational database management system
 brew "mysql-client"
 # MySQL database connector for C applications
-brew "mysql-connector-c", link: false
+brew "mysql-connector-c"
 # Platform built on V8 to build network applications
 brew "node"
 # Swiss-army knife of markup format conversion
@@ -112,7 +114,6 @@ brew "wget"
 brew "youtube-dl"
 cask "diffmerge"
 cask "docker"
-cask "iina"
 cask "java"
 cask "keka"
 cask "macdown"

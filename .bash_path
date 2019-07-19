@@ -8,3 +8,6 @@ GNUPATH=/usr/local/opt/coreutils/libexec/gnubin
 
 # export
 export PATH=$GNUPATH:$GOBIN:$PATH
+
+# git log with chinese
+export LESSCHARSET=utf-8
