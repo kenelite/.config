@@ -1,7 +1,10 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+# SSL/TLS cryptography library
+brew "openssl"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Shell extension to jump to frequently used directories
@@ -35,7 +38,7 @@ brew "dep"
 # Classic UNIX line editor
 brew "ed"
 # Collection of GNU find, xargs, and locate
-brew "findutils", args: ["with-default-names"]
+brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # GNU awk utility
@@ -84,6 +87,8 @@ brew "mysql-client"
 brew "mysql-connector-c"
 # Platform built on V8 to build network applications
 brew "node"
+# Tool for creating identical machine images for multiple platforms
+brew "packer"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Monitor data's progress through a pipe
@@ -112,15 +117,19 @@ brew "wdiff"
 brew "wget"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+cask "balenaetcher"
 cask "diffmerge"
 cask "docker"
 cask "java"
 cask "keka"
 cask "macdown"
 cask "meld"
+cask "microsoft-remote-desktop-beta"
 cask "mounty"
 cask "prince"
+cask "sequel-pro"
 cask "spectacle"
+cask "sqlitestudio"
 cask "syncthing-app"
 cask "vagrant"
 cask "xquartz"
