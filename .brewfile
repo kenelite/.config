@@ -3,8 +3,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-# SSL/TLS cryptography library
-brew "openssl"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Shell extension to jump to frequently used directories
@@ -57,6 +55,10 @@ brew "gnu-tar"
 brew "gnu-which", args: ["with-default-names"]
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# SSL/TLS cryptography library
+brew "openssl"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
@@ -84,13 +86,15 @@ brew "mysql", restart_service: true
 # Open source relational database management system
 brew "mysql-client"
 # MySQL database connector for C applications
-brew "mysql-connector-c"
+brew "mysql-connector-c", link: false
 # Platform built on V8 to build network applications
 brew "node"
 # Tool for creating identical machine images for multiple platforms
 brew "packer"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Monitor data's progress through a pipe
 brew "pv"
 # Interpreted, interactive, object-oriented programming language
@@ -98,11 +102,13 @@ brew "python@2"
 # x86 and PowerPC Emulator
 brew "qemu"
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
+brew "redis"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
+# Compressed read-only file system for Linux
+brew "squashfs"
 # User interface to the TELNET protocol (built from macOS Sierra sources)
 brew "telnet"
 # Tool to build, change, and version infrastructure
