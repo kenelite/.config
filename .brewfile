@@ -57,26 +57,26 @@ brew "gnu-which", args: ["with-default-names"]
 brew "gnutls"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# SSL/TLS cryptography library
-brew "openssl"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
 brew "grep", args: ["with-default-names"]
 # Popular GNU data compression program
 brew "gzip"
+# The Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
-# The Kubernetes package manager
-brew "kubernetes-helm"
 # Tools for zmodem/xmodem/ymodem file transfer
 brew "lrzsz"
 # Powerful, lightweight programming language
 brew "lua"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # GUI for vim, made for macOS
 brew "macvim"
 # Java-based project management
@@ -85,8 +85,6 @@ brew "maven"
 brew "mysql", restart_service: true
 # Open source relational database management system
 brew "mysql-client"
-# MySQL database connector for C applications
-brew "mysql-connector-c", link: false
 # Platform built on V8 to build network applications
 brew "node"
 # Tool for creating identical machine images for multiple platforms
@@ -103,8 +101,6 @@ brew "python@2"
 brew "qemu"
 # Persistent key-value database, with built-in net interface
 brew "redis"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
 # Compressed read-only file system for Linux
@@ -123,6 +119,7 @@ brew "wdiff"
 brew "wget"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+cask "anaconda2"
 cask "balenaetcher"
 cask "diffmerge"
 cask "docker"
