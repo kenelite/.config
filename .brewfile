@@ -136,3 +136,5 @@ cask "sqlitestudio"
 cask "syncthing-app"
 cask "vagrant"
 cask "xquartz"
+# settings: E, y/MM/dd H:mm:ss
+cask "itsycal"
