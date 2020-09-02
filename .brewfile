@@ -15,8 +15,6 @@ brew "bash-git-prompt"
 brew "binutils", link: true
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
 # CloudFlare's PKI toolkit
@@ -26,7 +24,7 @@ brew "cloc"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
-brew "coreutils"
+brew "coreutils", link: false
 # Tool for browsing source code
 brew "cscope"
 # Reimplementation of ctags(1)
@@ -34,7 +32,15 @@ brew "ctags"
 # Go dependency management tool
 brew "dep"
 # Classic UNIX line editor
-brew "ed"
+brew "ed", link: true
+# GNU multiple precision arithmetic library
+brew "gmp"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -48,19 +54,21 @@ brew "git-lfs"
 # C code prettifier
 brew "gnu-indent"
 # GNU implementation of the famous stream editor
-brew "gnu-sed", args: ["with-default-names"]
+brew "gnu-sed"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
 # GNU implementation of which utility
 brew "gnu-which", args: ["with-default-names"]
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Go programming environment (1.12)
+brew "go@1.12"
+# Version Control Visualization Tool
+brew "gource"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # GNU grep, egrep and fgrep
-brew "grep", args: ["with-default-names"]
+brew "grep"
 # Popular GNU data compression program
 brew "gzip"
 # The Kubernetes package manager
@@ -96,16 +104,20 @@ brew "pinentry-mac"
 # Monitor data's progress through a pipe
 brew "pv"
 # Interpreted, interactive, object-oriented programming language
-brew "python@2"
-# x86 and PowerPC Emulator
+brew "python@2", link: false
+# Emulator for x86 and PowerPC
 brew "qemu"
+# Rsync for cloud storage
+brew "rclone"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
+# Generate ASCII art with terminal, shell, and OS info
+brew "screenfetch"
 # Compressed read-only file system for Linux
 brew "squashfs"
-# User interface to the TELNET protocol (built from macOS Sierra sources)
+# User interface to the TELNET protocol
 brew "telnet"
 # Tool to build, change, and version infrastructure
 brew "terraform"
@@ -117,16 +129,17 @@ brew "watch"
 brew "wdiff"
 # Internet file retriever
 brew "wget"
+# JavaScript package manager
+brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 cask "anaconda2"
 cask "balenaetcher"
 cask "diffmerge"
-cask "docker"
+cask "itsycal"
 cask "java"
 cask "keka"
 cask "macdown"
-cask "meld"
 cask "microsoft-remote-desktop-beta"
 cask "mounty"
 cask "prince"
@@ -134,7 +147,4 @@ cask "sequel-pro"
 cask "spectacle"
 cask "sqlitestudio"
 cask "syncthing-app"
-cask "vagrant"
 cask "xquartz"
-# settings: E, y/MM/dd H:mm:ss
-cask "itsycal"
