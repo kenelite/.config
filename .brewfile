@@ -5,6 +5,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 # Download with resuming and segmented downloading
 brew "aria2"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Automatically restart SSH sessions and tunnels
@@ -13,8 +15,6 @@ brew "autossh"
 brew "bash-git-prompt"
 # GNU binary tools for native development
 brew "binutils", link: true
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Searches a binary image for embedded files and executable code
 brew "binwalk"
 # CloudFlare's PKI toolkit
@@ -29,16 +29,20 @@ brew "coreutils", link: false
 brew "cscope"
 # Reimplementation of ctags(1)
 brew "ctags"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Go dependency management tool
 brew "dep"
 # Classic UNIX line editor
 brew "ed", link: true
 # GNU multiple precision arithmetic library
 brew "gmp"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Compression/decompression library aiming for high speed
+brew "snappy"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Collection of GNU find, xargs, and locate
@@ -71,7 +75,9 @@ brew "graphviz"
 brew "grep"
 # Popular GNU data compression program
 brew "gzip"
-# The Kubernetes package manager
+# Reliable, high performance TCP/HTTP load balancer
+brew "haproxy"
+# Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
@@ -87,10 +93,14 @@ brew "lua"
 brew "ruby"
 # GUI for vim, made for macOS
 brew "macvim"
+# Development kit for the Java programming language
+brew "openjdk"
 # Java-based project management
 brew "maven"
+# Scalable distributed version control system
+brew "mercurial"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql"
 # Open source relational database management system
 brew "mysql-client"
 # Platform built on V8 to build network applications
@@ -105,14 +115,14 @@ brew "pinentry-mac"
 brew "pv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@2", link: false
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.7"
 # Emulator for x86 and PowerPC
 brew "qemu"
+# File browser
+brew "ranger"
 # Rsync for cloud storage
 brew "rclone"
-# Persistent key-value database, with built-in net interface
-brew "redis"
-# Terminal multiplexer with VT100/ANSI terminal emulation
-brew "screen"
 # Generate ASCII art with terminal, shell, and OS info
 brew "screenfetch"
 # Compressed read-only file system for Linux
@@ -133,7 +143,6 @@ brew "wget"
 brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-cask "anaconda2"
 cask "balenaetcher"
 cask "diffmerge"
 cask "itsycal"
@@ -147,4 +156,5 @@ cask "sequel-pro"
 cask "spectacle"
 cask "sqlitestudio"
 cask "syncthing-app"
+cask "webpquicklook"
 cask "xquartz"
